@@ -45,31 +45,22 @@ class HistoryViewModel @Inject constructor(
     private fun loadHistory() {
         viewModelScope.launch {
             dispatch(HistoryAction.SetLoading(true))
-            try {
-                repository.getConversionHistory().collect { result ->
-                    result
-                        .onSuccess { conversions ->
-                            dispatch(HistoryAction.SetConversions(conversions))
-                            dispatch(HistoryAction.SetError(null))
-                        }
-                        .onFailure { e ->
-                            dispatch(
-                                HistoryAction.SetError(
-                                    e.message ?: "Failed to load conversion history"
-                                )
+            repository.getConversionHistory().collect { result ->
+                result
+                    .onSuccess { conversions ->
+                        dispatch(HistoryAction.SetConversions(conversions))
+                        dispatch(HistoryAction.SetError(null))
+                    }
+                    .onFailure { e ->
+                        dispatch(
+                            HistoryAction.SetError(
+                                e.message ?: "Failed to load conversion history"
                             )
-                        }
-                        .also {
-                            dispatch(HistoryAction.SetLoading(false))
-                        }
-                }
-            } catch (e: Exception) {
-                dispatch(HistoryAction.SetLoading(false))
-                dispatch(
-                    HistoryAction.SetError(
-                        e.message ?: "Failed to collect conversion history: ${e.message}"
-                    )
-                )
+                        )
+                    }
+                    .also {
+                        dispatch(HistoryAction.SetLoading(false))
+                    }
             }
         }
     }
