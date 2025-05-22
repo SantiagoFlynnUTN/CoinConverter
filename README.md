@@ -3,9 +3,11 @@
 An Android application for converting currency, with support for both offline and online modes
 through product flavors.
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/c18f7d2b-c81c-4439-9646-fb51f2db529c" alt="Demo" width="300"/>
-</p>
+  
+| Light                 | Dark                     |
+|------------------------------------------------|----------------------------------|
+| <img src="https://github.com/user-attachments/assets/c18f7d2b-c81c-4439-9646-fb51f2db529c" height="500"/> | <img src="https://github.com/user-attachments/assets/3f60d919-411b-4482-ba5b-2cea078a2507" height="500"/> |
+
 
 ## Features
 
