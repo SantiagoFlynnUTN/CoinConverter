@@ -51,7 +51,9 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.material.icons.automirrored.filled.ArrowForward
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
+import com.santiagoflynn.coinconverter.R
 import com.santiagoflynn.coinconverter.domain.model.ConversionResult
 import com.santiagoflynn.coinconverter.domain.model.Currency
 import com.santiagoflynn.coinconverter.ui.theme.CoinConverterTheme
@@ -230,7 +232,7 @@ private fun SwapCurrenciesButton(onClick: () -> Unit) {
         contentAlignment = Alignment.Center
     ) {
         Icon(
-            imageVector = Icons.AutoMirrored.Filled.ArrowForward,
+            painter = painterResource(R.drawable.ic_arrow_bidirectional),
             contentDescription = "",
             tint = MaterialTheme.colorScheme.onPrimaryContainer
         )
