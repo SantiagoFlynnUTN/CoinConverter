@@ -3,6 +3,10 @@
 An Android application for converting currency, with support for both offline and online modes
 through product flavors.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c18f7d2b-c81c-4439-9646-fb51f2db529c" alt="Demo" width="300"/>
+</p>
+
 ## Features
 
 * **Offline & Online Modes:** Leverages product flavors and Dependency Injection (DI) to provide
@@ -72,6 +76,13 @@ from [FreeCurrencyAPI](https://freecurrencyapi.com/).
 * **`compileSdk`:** 35
 * **`minSdk`:** 24 (Android 7.0 Nougat)
 * **`targetSdk`:** 35
+
+## Architecture
+
+| Clean Architecture                    | MVI Flow                        |
+|------------------------------------------------|----------------------------------|
+| <img src="https://github.com/user-attachments/assets/e7cb5299-4c8f-4354-a6f7-c045539b55b9" height="600"/> | <img src="https://github.com/user-attachments/assets/eb5757df-21e8-4fcc-bd38-33440c3ab5dc" height="600"/> |
+
 
 ## Disclaimer
 
