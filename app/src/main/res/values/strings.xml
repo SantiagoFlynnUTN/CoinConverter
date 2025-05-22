@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CoinConverter</string>
+    <string name="navigation_home">Home</string>
+    <string name="navigation_convert">Convert</string>
+    <string name="navigation_history">History</string>
+    <string name="navigation_settings">Settings</string>
+    <string name="navigation_favorites">Favorites</string>
+</resources>
