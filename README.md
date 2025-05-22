@@ -21,7 +21,9 @@ through product flavors.
 * **Testable without API Key:** The offline flavor allows for complete testing of the app's core
   functionality and user interface without requiring an API key, ideal for quick evaluations and
   development.
+  
 * **API Key Management:** The API key is securely stored in `local.properties`.
+  
 * **Modern UI:** The user interface is built with Jetpack Compose, incorporating AI-assisted design
   and manual refinements to adhere to the following best practices:
   * Granular composable methods
@@ -32,16 +34,20 @@ through product flavors.
   * Non-reusable modifiers
   * Optimized recomposition
   * Lazy loading for history items
+  * 
 * **Navigation:** Implements Compose Navigation with a bottom bar and grouped navigation graphs.
+  
 * **Architecture:** Follows MVVM (Model-View-ViewModel) with MVI (Model-View-Intent) guidelines for
   a unidirectional data flow.
   * Utilizes Kotlin Flows for handling requests with back pressure.
   * Employs Moshi for efficient JSON serialization.
   * Uses Kotlin Result for managing the status of repository requests.
+ 
 * **Testability:** The presentation layer is designed to be testable, with support for
   `CoroutineTest`, JUnit, and MockK.
+
 * **Data Sources:** Abstracts network operations with remote and local data source layers.
-* **Dark Mode:** Compatible with dark mode.
+  
 * **Modular Design:** Packages are structured in a way that allows for easy migration to separate
   modules, promoting separation of concerns.
 
