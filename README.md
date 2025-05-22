@@ -12,6 +12,10 @@ through product flavors.
 * **Offline & Online Modes:** Leverages product flavors and Dependency Injection (DI) to provide
   distinct offline and online versions of the app. This approach ensures that the production
   codebase remains clean and free of flavor-specific code.
+<p align="center">
+  <img width="457" alt="image" src="https://github.com/user-attachments/assets/be81b956-ff12-48dd-998b-d729cc621b50" />
+</p>
+
 * **Testable without API Key:** The offline flavor allows for complete testing of the app's core
   functionality and user interface without requiring an API key, ideal for quick evaluations and
   development.
