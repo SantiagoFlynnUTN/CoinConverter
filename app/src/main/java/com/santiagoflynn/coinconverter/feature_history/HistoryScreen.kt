@@ -114,7 +114,10 @@ private fun ConversionsList(
         contentPadding = PaddingValues(bottom = 16.dp),
         verticalArrangement = Arrangement.spacedBy(8.dp)
     ) {
-        items(conversions) { conversion ->
+        items(
+            items = conversions,
+            key = { conversion -> conversion.id }
+        ) { conversion ->
             ConversionHistoryItem(
                 conversion = conversion,
                 onClick = { onConversionClick(conversion.id) }
